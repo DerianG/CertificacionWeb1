@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>pagina web con formularios</title>
+</head>
+<body>
+	<h1>FORMULARIOS WEB CON HTML5</h1>
+	<p>ESTA ES UNA PAGINA SOBRE LAS  NUEVAS CARACTERISTICAS DE LOS FORMUULARIOS CON HTML5</p>
+	<form id="form-order">
+	<p>
+		<label for="name">Nombre obligatorio: </label>
+		<input type="text" name="nombre" id="name" placeholder="ingrese nombre " autofocus="" autocomplete="" required="">
+	</p>
+	<p>
+		<label for="passwd">Contraseña obligatoria: </label>
+		<input type="passwd" name="contraseña" placeholder="ingrese contraseña" required="La contraseña debe tener 4 letras y 3 numeros en ese ordden " pattern="[a-z]{4}[0-9]{3}"> 
+	</p>
+	<p>
+		<label for="tel">Telefono: </label>
+		<input type="tel" name="telefono" placeholder="ingrese telefoo" maxlength="10" required="ingrese numero">
+	</p>
+	<p>
+		<label for="email">Correo: </label>
+		<input type="email" name="correo" placeholder="ingrese correo" required="">
+	</p>
+	<p>
+		<label for="website">Pagina web</label>
+		<input type="url" name="sitio" placeholder="ingrese pagina web">
+	</p>
+	<p>
+		<label for="numero">numero de paginas</label>
+		<input type="number" name="numeros" min="2" max="14" step="2" > entre 2 y 14 solo pares
+	</p>
+	<p>
+		<label for="date">Fecha de envio</label>
+		<input type="date" name="fecha" min="2020-06-25"> minimo 2020-06-25
+	</p>
+	<p>
+		<label for="Color">Color</label>
+		<input type="Color" name="color">
+	</p>
+	<p>
+		<label for="search">Buscar</label>	
+		<input type="search" name="buscar" >
+	</p>
+	<p>
+		<label for="points"> puntos</label>
+		<input type="range" name="punyos" min="1" max="10">entre 1 y 10
+	</p>
+	<p>
+		<fieldset>
+			<legend>selecciona una opcion</legend>
+			<p><label><input type="radio" name="prioridad" value="vaja" checked="">Vaja</label></p>
+			<p><label><input type="radio" name="prioridad" value="media" >Media</label></p>
+			<p><label><input type="radio" name="prioridad" value="alta">Alta</label></p>
+		</fieldset>
+	</p>
+	<p>
+		<fieldset>
+			<legend>selecciona una opcion</legend>
+			<p><label><input type="checkbox" name="prioridad" value="uno" checked="">Uno</label></p>
+			<p><label><input type="checkbox" name="prioridad" value="dos" >Dos</label></p>
+			<p><label><input type="checkbox" name="prioridad" value="tres">Tres</label></p>
+		</fieldset>
+	</p>
+		<input type="submit" name="ENVIAR">
+
+	</form>
+
+</body>
+</html>
